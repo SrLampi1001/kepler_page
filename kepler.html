@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -267,3 +268,274 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kepler 22b — Enciclopedia</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="kepler.css">
+</head>
+
+<body>
+
+  <!-- DARK MODE TOGGLE -->
+  <input id="dm" class="dm" type="checkbox" aria-hidden="true" />
+  <label class="dm-label" for="dm" title="Alternar modo Día / Noche">🌗</label>
+
+  <!-- AURORA + STARS (decorativos) -->
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <div class="wrap">
+
+    <!-- HEADER -->
+    <header class="site-header card">
+      <div class="brand">
+        <!-- pequeño icono -->
+        <svg width="56" height="56" viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#ffd86b"/>
+              <stop offset="1" stop-color="#ff78b3"/>
+            </linearGradient>
+          </defs>
+          <circle cx="12" cy="12" r="10" fill="url(#g1)"/>
+        </svg>
+
+        <div>
+          <h1>Kepler 22b</h1>
+          <p class="muted">Enciclopedia visual </p>
+        </div>
+      </div>
+
+      <nav class="top-nav" aria-label="Navegación principal">
+        <a href="#intro">Intro</a>
+        <a href="#sociedades">Sociedades</a>
+        <a href="#criaturas">Criaturas</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#historia">Historia</a>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <!-- INTRO -->
+      <section id="intro" class="card">
+        <div class="row">
+          <div class="col">
+            <h2>Introducción</h2>
+            <p class="lead">Kepler 22b presenta rotación sincronizada: Aurorion (luz eterna), Tenebrion (oscuridad perpetua) y la franja Equinoxis. Aquí tienes un compendio con cultura, biología y mapas conceptuales.</p>
+
+            <div class="badges">
+              <span class="badge b-solar">Aurorion</span>
+              <span class="badge b-night">Teriebron</span>
+              <span class="badge b-mid">Equinoxis</span>
+            </div>
+          </div>
+
+          <aside class="col aside-card">
+            <h4>Datos rápidos</h4>
+            <ul>
+              <li><strong>Rotación:</strong> Sincronizada</li>
+              <li><strong>Tamaño:</strong> ≈2.4 × Tierra (estimado)</li>
+              <li><strong>Ubicación:</strong> ~600 años luz</li>
+            </ul>
+            <a class="cta" href="#sociedades">Explorar sociedades →</a>
+          </aside>
+        </div>
+
+        <details>
+          <summary>Resumen histórico</summary>
+          <p>En el planeta de kepler 22b, comviven humanos y criaturas en 3 regiones principales.</p>
+        </details>
+      </section>
+
+      <!-- SOCIEDADES -->
+      <section id="sociedades" class="card">
+        <h2>Sociedades</h2>
+
+        <div class="tabs-advanced">
+          <input id="tabA" name="tabs" type="radio" checked>
+          <input id="tabB" name="tabs" type="radio">
+          <input id="tabC" name="tabs" type="radio">
+
+          <div class="tablabels">
+            <label for="tabA">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L15 8l6 .5-4.5 3.5L18 20l-6-4-6 4 1.5-8L2 8.5 8 8z"/></svg>
+              Aurorion
+            </label>
+
+            <label for="tabB">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-4.97 0-9 4.03-9 9 0 3.25 1.7 6.12 4.3 7.78C6.9 19.3 6 17.24 6 15c0-3.86 3.14-7 7-7 2.24 0 4.3.9 5.78 2.3C18.12 4.7 15.25 3 12 3z"/></svg>
+              Tenebrion
+            </label>
+
+            <label for="tabC">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 110 12 6 6 0 010-12z"/></svg>
+              Equinoxis
+            </label>
+          </div>
+
+          <div class="panels">
+            <section class="panel pA">
+              <h3>Aurorion — Sociedad de la Luz</h3>
+              <p class="muted">Ciudades flotantes, tecnología fotónica y cultura expansiva.</p>
+
+              <div class="grid-2">
+                <div>
+                  <h4>Fisiología</h4>
+                  <p>Piel dorada/plateada, ojos multiespectrales, adaptaciones para radiación alta.</p>
+                </div>
+                <div>
+                  <h4>Cultura</h4>
+                  <p>Festival anual de luz, culto a la Reina Solar y tecnologías de almacenamiento fotónico.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel pB">
+              <h3>Tenebrion — Sociedad de la Sombra</h3>
+              <p class="muted">Ingeniería subterránea, bioluminiscencia y redes sonoras.</p>
+
+              <div class="grid-2">
+                <div>
+                  <h4>Fisiología</h4>
+                  <p>Piel absorbente, vista nocturna y oído desarrollado.</p>
+                </div>
+                <div>
+                  <h4>Religión</h4>
+                  <p>Rituales sónicos y culto al Rey Lunar.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel pC">
+              <h3>Equinoxis — Sociedad del Medio</h3>
+              <p class="muted">Diplomacia, comercio y tecnología híbrida que regula la franja.</p>
+
+              <div class="grid-2">
+                <div>
+                  <h4>Cultura</h4>
+                  <p>Comerciantes, mediadores y guardianes del equilibrio.</p>
+                </div>
+                <div>
+                  <h4>Recursos</h4>
+                  <p>Cultivos híbridos y guardianes limbófagos.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARRUSEL Y CRIATURAS -->
+      <section id="criaturas" class="card">
+        <h2>Criaturas destacadas</h2>
+
+        <div class="carousel">
+          <input id="c1" name="carousel" type="radio" checked>
+          <input id="c2" name="carousel" type="radio">
+          <input id="c3" name="carousel" type="radio">
+
+          <div class="slides">
+            <div class="slide s1">
+              <div class="creature-visual solar"></div>
+              <div>
+                <h3>Fotovores</h3>
+                <p>Herbívoros con membranas fotovoltaicas; monturas y guardianes.</p>
+              </div>
+            </div>
+
+            <div class="slide s2">
+              <div class="creature-visual night"></div>
+              <div>
+                <h3>Ecosombras</h3>
+                <p>Mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm.</p>
+              </div>
+            </div>
+
+            <div class="slide s3">
+              <div class="creature-visual hybrid"></div>
+              <div>
+                <h3>Limbófagos</h3>
+                <p>Guardianes híbridos que alternan entre fuentes de energía.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <label for="c1" title="Fotovores"></label>
+            <label for="c2" title="Ecosombras"></label>
+            <label for="c3" title="Limbófagos"></label>
+          </div>
+        </div>
+
+        <div class="creature-grid">
+          <article class="card-mini">
+            <div class="chip solar">Aurorion</div>
+            <h4>Auror aves</h4>
+            <p class="muted">Pppppppppppppppppppppppppppppppppppp.</p>
+          </article>
+
+          <article class="card-mini">
+            <div class="chip night">Tenebrion</div>
+            <h4>Geotermos</h4>
+            <p class="muted">Iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+          </article>
+
+          <article class="card-mini">
+            <div class="chip mid">Equinoxis</div>
+            <h4>Twilight voladores</h4>
+            <p class="muted">Transportan semillas entre hemisferios.</p>
+          </article>
+        </div>
+
+      </section>
+
+      <!-- MAPA: imagen real (concepto artístico de NASA/JPL) -->
+      <section id="mapa" class="card">
+        <h2>Mapa / Imagen del planeta</h2>
+        <p class="muted">Imagen artística representando a Kepler-22b (fuente: NASA / JPL).</p>
+
+        <div class="map-wrap">
+          <!-- imagen artística pública (JPL / NASA) -->
+          <img class="planet-img" src="https://photojournal.jpl.nasa.gov/jpeg/PIA14883.jpg" alt="Concepto artístico de Kepler-22b (NASA/JPL)" />
+
+          <div class="map-legend">
+            <div><span class="dot solar"></span> Aurorion (lado iluminado)</div>
+            <div><span class="dot mid"></span> Equinoxis (franja)</div>
+            <div><span class="dot night"></span> Tenebrion (lado oscuro)</div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- TIMELINE / HISTORIA -->
+      <section id="historia" class="card">
+        <h2>Cronología breve</h2>
+        <ol class="timeline">
+          <li><strong>Era 0:</strong> Estrella despierta — creación de Aurorion</li>
+          <li><strong>Era 1:</strong> Emergencia geotérmica — Tenebrion forjado</li>
+          <li><strong>Era 2:</strong> Sincronización — nace Equinoxis</li>
+          <li><strong>Presente:</strong> Tensiones, comercio y profecía</li>
+        </ol>
+      </section>
+
+      <footer class="card site-footer">
+        <p class="muted"> lore.</p>
+      </footer>
+
+    </main>
+
+  </div> <!-- wrap -->
+
+</body>
+</html>
+>>>>>>> d74ba57d51d100b1e424103c7c04cd760dd1ff03
