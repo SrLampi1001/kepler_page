@@ -4,45 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Kepler 22-B</title>
 </head>
 <body>
-    <header>
-            <h1> KEPLER 22b </h1> 
-        </header>
-        <nav>
-            <a href="#intro"> Introducción </a> 
-            <a href="#lux"> Reino de la Lux </a> 
-            <a href="#dark"> Reino de la dark </a> 
-            <a href="#medium"> Reino del Medium </a> 
-        </nav>
-
-        <div class="video-container">
-            <video controls autoplay muted loop playsinline>
-                <source src="multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4">
-        </div>
-
-        <section id="intro">  
-            <h2> Introducción </h2>
-            <p> Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, 
-                mientras que el otro está en completa oscuridad. La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra 
-                crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro, corresponde al renino de "". A sus extremos se encuentran los reinos de lux y dartumbria. 
-                Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
-            </p>
-
-                Datos rápidos
-                <br>
-                Rotación: Sincronizada
-                <br>
-                Tamaño: ≈2.4 × Tierra (estimado)
-                <br>
-                Ubicación: ~600 años luz
-
-
-            <div class="subseccion">
-              <h3> Origen de los Mundos </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing eliit. </p>
-             </div>
+    <header class="main-header">
+            <h1 class="full-flex-h1"> KEPLER 22b </h1> 
+            <nav class="main-nav">
+                <a href="#intro"> Introducción </a> 
+                <a href="#lux"> Reino de la Lux </a> 
+                <a href="#dark"> Reino de la dark </a> 
+                <a href="#medium"> Reino del Medium </a> 
+            </nav>
+        </header>        
+        <video autoplay muted loop playsinline class="main-background">
+            <source src="multimedia/videos/215697_small.mp4">
+        </video>
+        <main class="main-container">
+            <section id="intro" class="text-image-section">  
+                <article class="text-container">
+                    <h2 class="article-h2"> Introducción </h2>
+                    <p> Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, 
+                        mientras que el otro está en completa oscuridad. La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra 
+                        crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro, corresponde al renino de "". A sus extremos se encuentran los reinos de lux y dartumbria. 
+                        Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
+                    </p>
+                    <p>
+                    <span class="border-top">Datos rápidos: </span>
+                        <ul class="tabed-list">
+                            <li><i class="cursive">Rotación:</i> Sincronizada</li>
+                            <li><i class="cursive">Tamaño:</i> ≈2.4 × Tierra (estimado)</li>
+                            <li><i class="cursive">Ubicación:</i> ~600 años luz</li>
+                        </ul>
+                    </p>
+                </article>
+                <aside class="aside-video-container">
+                    <video autoplay muted loop playsinline class="aside-video">
+                        <source src="multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4">    
+                    </video>
+                </aside>
          </section>
         <section id="lux"> 
             <h2> Reino de la Luz </h2>
@@ -71,10 +73,8 @@
                 Altos índices cognitivos
                 <br>
                 Longevidad ligeramente mayor
-
-</p>
+                </p>
             </div>
-
             <div class="subseccion">
                 <h3> informacion general del reino </h3>
                 <h4> Tipo de gobierno: </h4>
@@ -191,5 +191,7 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing eliit. </p>
             </div>
         </section>
+        </main>
+        
 </body>
 </html>
