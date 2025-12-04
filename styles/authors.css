@@ -1,0 +1,70 @@
+/* Containers */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container{
+    background-color: #249797;
+}
+.main-header{
+    background-color: #fff6;
+}
+.sub-list-container{
+    padding: 0 0 0 1rem; 
+}
+.nav-bar{
+    display: inline-block;
+}
+/* Nav */
+.header-nav{
+    display: flex;
+    justify-content: left;
+}
+.left-nav{
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    width: max-content;
+    background-color: #0002;
+    padding: 0 1.5rem 0 .5rem;
+    height: 100vh;
+}
+.left-nav a::before{
+    content: "> ";
+}
+/* Lists */
+.flex-list{
+    display: flex;
+    margin: 0 1rem;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+.col-flex-list{
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+.flex-list li{
+    margin: 0 1rem;
+}
+.sub-list{
+    list-style: none;
+}
+/* text and a tags */
+.local-a{
+    text-decoration: none;
+    color: #000;
+}
+.local-a:hover{
+    text-decoration: underline;
+}
+.remote-a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+.author-container{
+    display: inline-block;
+}
