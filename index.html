@@ -3,8 +3,8 @@
     <head> <!-- Etiqueta para agregar características de la página web -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KEPLER 22b </title> <!-- Etiqueta que indica el título de la página web -->
-        <link rel="stylesheet" href="kepler.css"> <!-- Call file .css for desing -->
+        <title> KEPLER 22B </title> <!-- Etiqueta que indica el título de la página web -->
+        <link rel="stylesheet" href="styles/index.css"> <!-- Call file .css for desing -->
     </head> 
 
     <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
@@ -12,15 +12,54 @@
 
         <div class="container"> <!-- Contenido del menú -->
             <aside class="sidebar"> <!-- Menú lateral -->
-                <a href="#intro"> Introducción </a> <!-- Llama la seccion intro -->
-                <a href="#lux"> Reino de la Luz </a> <!-- Llama la seccion lux -->
-                <a href="#dark"> Reino de la Oscuridad </a> <!-- Llama la seccion dark -->
-                <a href="#medium"> Reino del Medio </a> <!-- Llama la seccion medium -->
+
+                <div class="main-principal"> <!-- Etiqueta para crear el menu principal -->
+                    <a href="#intro"> Introducción </a> <!-- Llama la seccion intro -->
+                </div>
+
+                <div class="main-item">
+                    <input type="checkbox" id="lux-toogle"> <!-- Etiqueta para crear un checkbox -->
+                    <label for="lux-toogle" class="main-title"> Reino de la luz </label>
+
+                    <div class="submain">
+                        <a href="subpages/solar-court.html"> Reino </a>
+                        <a href="subpages/solar-court.html#lux-carcater"> Características </a>
+                        <a href="subpages/solar-court.html#lux-cultura"> Cultura </a>
+                        <a href="subpages/solar-court.html#lux-entidad"> Entidad suprema </a>
+                        <a href="subpages/solar-court.html#lux-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <input type="checkbox" id="dark-toogle"> 
+                    <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
+
+                    <div class="submain"> 
+                        <a href="subpages/shadow-court.html"> Reino </a>
+                        <a href="subpages/shadow-court.html#dark-carcater"> Características </a>
+                        <a href="subpages/shadow-court.html#dark-cultura"> Cultura </a>
+                        <a href="subpages/shadow-court.html#dark-entidad"> Entidad suprema </a>
+                        <a href="subpages/shadow-court.html#dark-criaturas"> Criaturas </a>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <input type="checkbox" id="medium-toogle"> 
+                    <label for="medium-toogle" class="main-title"> Reino del Medio </label>
+
+                    <div class="submain"> 
+                        <a href="subpages/limbo-court.html"> Reino </a>
+                        <a href="subpages/limbo-court.html#medium-carcater"> Características </a>
+                        <a href="subpages/limbo-court.html#medium-cultura"> Cultura </a>
+                        <a href="subpages/limbo-court.html#medium-entidad"> Entidad suprema </a>
+                        <a href="subpages/limbo-court.html#meidum-criaturas"> Criaturas </a>
+                    </div>
+                </div>
             </aside>
             
             <div class="video-container"> <!-- Contenido del video -->
                 <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
-                    <source src="/kepler_page/multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
+                    <source src="multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
                     Tu navegador no soporta video. <!-- Mensaje de error -->
                 </video>
             </div>
@@ -30,95 +69,28 @@
 
                 <section id="intro" class="text-box"> <!-- Etiqueta para crear una seccion identificada como intro -->
                     <h1 class="handwritten-title"> Introducción </h1> <!-- Etiqueta que indica un titulo -->
-                    <p> En el distante sistema Kepler-22, más allá de las estrellas conocidas, existe un planeta azul donde tres reinos conviven en un frágil equilibrio: la Luz eterna, la Oscuridad absoluta y el Reino del Medio, puente entre ambos. </p>
+                    <p> 
+                        Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, mientras que el otro está en completa oscuridad. 
+                        La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro; corresponde al reino de "". 
+                        A sus extremos se encuentran los reinos de Lux y Dartumbria. Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
+                    </p>
                 
                     <div class="subseccion"> <!-- Etiqueta para crear una subseccion -->
-                        <h3> Origen de los Mundos </h3>
-                        <p> Hace eones, una entidad primordial se dividió en tres esencias. De su aliento nació la Luz, de su sombra la Oscuridad y de su corazón el Reino del Medio. Desde entonces, ningún reino puede existir sin los otros. </p>
-                    </div>
-                </section> 
-
-            
-                <section id="lux"> <!-- Etiqueta para crear una seccion identificada como lux -->
-                    <h2 class="handwritten-title"> Reino de la Luz </h2>
-                    <p> Un plano de cristal y fuego blanco donde nunca cae la noche. Sus habitantes nacen de la propia luz y disuelven su forma al menor contacto con la sombra. </p>
-                    
-                    <div class="subseccion">
-                        <h3> Características </h3>
-                        <p> Cielos de oro líquido, ciudades flotantes de cuarzo, ríos de plasma luminoso. </p> <!-- Etiqueta para agregar párrafos -->
-                    </div>
-                    
-                    <div class="subseccion">
-                        <h3> Cultura </h3>
-                        <p> Adoran la transparencia absoluta. Ocultar un pensamiento se considera el peor crimen. </p>
-                    </div>
-                    
-                    <div class="subseccion">
-                        <h3> Entidad Suprema </h3>
-                        <p> AURYX, el Sol que Camina. Una figura andrógina de luz pura con miles de alas de fotones. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Criaturas </h3>
-                        <p> Fénix de plasma, ángeles de cristal, serpientes de arcoíris, guardianes solares. </p>
+                        <p>
+                            <span class="border-top"> Datos rápidos: </span>
+                                <ul class="tabed-list">
+                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li>
+                                <li> <i class="cursive"> Tamaño: </i> ≈2.4 × Tierra (estimado)</li>
+                                <li> <i class="cursive"> Ubicación: </i> ~600 años luz</li>
+                                </ul>
+                        </p>
                     </div>
                 </section>
-                
-                <section id="dark"> <!-- Etiqueta para crear una seccion identificada como dark -->
-                    <h2 class="handwritten-title"> Reino de la Oscuridad </h2>
-                    <p> Un vacío infinito donde la luz es solo un recuerdo. Aquí el tiempo fluye al revés y los secretos son moneda de cambio. </p>
-                    
-                    <div class="subseccion">
-                        <h3> Características </h3>
-                        <p> Noche eterna, mares de tinta viva, montañas que susurran profecías. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Cultura </h3>
-                        <p> El silencio es sagrado. Hablar sin necesidad es castigado con el olvido eterno. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Entidad Suprema </h3>
-                        <p> NYXARA, la Madre del Vacío. Una mujer de sombras cambiantes con ojos de agujeros negros. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Criaturas </h3>
-                        <p> Sombras vivientes, dragones de obsidiana, espectros cantores, devoradores de recuerdos. </p>
-                    </div>
-                </section>
-
-            
-                <section id="medium"> <!-- Etiqueta para crear una seccion identificada como medium -->
-                    <h2 class="handwritten-title"> Reino del Medio </h2>
-                    <p> El único lugar donde amanecer y atardecer existen. Aquí humanos, exiliados de ambos reinos, intentan mantener el equilibrio. </p>
-                    
-                    <div class="subseccion">
-                        <h3> Características </h3>
-                        <p> Día y noche se alternan cada 12 horas. Bosques crepusculares, ciudades en la frontera entre luz y sombra. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Cultura </h3>
-                        <p> Mezcla de ambas tradiciones: festivales de luz y noches de silencio, máscaras que cambian según la hora. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Entidad Suprema </h3>
-                        <p> EQUILUX, el Guardián del Umbral. Un ser de luz y sombra entrelazadas que nunca muestra su rostro completo. </p>
-                    </div>
-
-                    <div class="subseccion">
-                        <h3> Criaturas </h3>
-                        <p> Híbridos: grifos crepusculares, lobos de dos cabezas (una solar, una lunar), humanos con alas de luz y sombra. </p>
-                    </div>
-                </section> <!-- Etiqueta para cerrar la etiqueta section -->
             </main> <!-- Etiqueta para cerrar la etiqueta main -->
         </div> <!-- Etiqueta para cerrar la etiqueta div -->
 
         <footer class="footer"> <!-- Etiqueta para definir pie de página -->
-            © Copyright 2025 • KEPLER 22B <!-- Información del pie de página -->
+            © Copyright 2025 | KEPLER 22B <!-- Información del pie de página -->
         </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
     </body> <!-- Etiqueta para cerrar la etiqueta body -->
 </html> <!-- Etiqueta para cerrar la etiqueta html -->
