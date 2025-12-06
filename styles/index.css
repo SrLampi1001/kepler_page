@@ -1,21 +1,71 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 40px;
-    background-color: #f9f9f9;
-    color: #333;
+/* Root y general */
+:root{
+    font-size: 19px;
 }
 
-header {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* Containers */
+.main-header {
     text-align: center;
-    padding: 20px;
-    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #2a808b50;
     color: white;
-    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+.main-section {
+    background: #0008;
+    margin: 1.8rem 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.text-image-section{
+    display: grid;
+    grid-template-columns: 75% 22%;
+    column-gap: 2rem;
 }
 
-nav {
-    background-color: #333;
+.text-container{
+    text-align: justify;
+}
+.aside-media-container{
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+}
+.main-container{
+    position: relative;
+    z-index: 100;
+    padding: 0 10rem;
+}
+.main-footer{
+    position: relative;
+    z-index: 100;
+    background-color: #000;
+    padding: 2rem 0;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+/* Navs and a */
+.main-nav {
+    background-color: #08191b50;
+    flex-basis: 100%;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -23,64 +73,104 @@ nav {
     text-align: center;
 }
 
-nav a {
+.main-nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+.main-nav a:hover {
     text-decoration: underline;
 }
-
-section {
-    text-align: center;
-    margin-bottom: 60px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.fncy-btn-a{
+    display: inline-block;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
 }
-
-h1 {
+.non-visible-a{
+    font-size: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+/* Titles */
+.full-flex-h1 {
     color: #ffffff;
+    font-weight: 900;
+    flex-basis: 100%;
+    padding: .3rem 0;
 }
-
-h2, h3, h4 {
-    color: #222;
+.article-h2{
+    margin-bottom: .5rem;
+    font-weight: 700;
 }
-
-.subseccion {
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.video-container {
-    position: fixed;
-    right: 50px;
-    top: 300px;           
-    width: 360px;
-    max-width: 90vw;
-    z-index: 90;
-    background: #000;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    padding: 8px;
-}
-
-.video-container video {
+/* Media tags */
+.aside-video{
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+}
+.main-background{
+    top: 0;
+    background-color: #000;
+    position: fixed;
+    z-index: 0;
+    width: 100vw;
+}
+.background-cliped{
+    background-clip:text;
+    -webkit-background-clip: text;
+    background-size:12rem;
+}
+.linear-yellow-blue-background{
+    background-image: linear-gradient(to right, #4a4af7,#fff, #fffc4a);
+}
+/* Lists */
+.tabed-list{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    list-style: georgian;
+}
+/* Texts */
+.transparent-font{
+    color: transparent;
+}
+.dark-blue-purple-bold{
+    color: #4a4af7;
+    font-weight: 800;
+}
+.yellow-bold{
+    color: #fffc4a;
+    font-weight: 800;
+}
+.white-bold{
+    color: #fff;
+    font-weight: 500;
+}
+.white-font{
+    color: #fff;
+    font-weight: 100;
+}
+.separator-border-top{
+    margin: 1rem 0 0 0;
+    font-weight: 600;
+    color: #fffb; 
     display: block;
+    border-top: 1px solid #fff;
+}
+.border-top{
+    border-top: 1px solid #fff;
+}
+.cursive{
+    font-style:oblique;
 }
 
-@media (max-width: 900px) {
-    .video-container {
-        width: 300px;
-        right: 10px;
-        top: 120px;
+/* other resolutons */
+@media screen  and (max-width: 1615px) {
+    .main-background{
+        width: initial;
+        height: 100vh;
     }
 }
