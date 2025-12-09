@@ -1,96 +1,140 @@
-<!DOCTYPE html> <!-- Le indica al explorador web que el código que estamos realizando es html -->
-<html lang="es"> <!-- Etiqueta de raíz de la estructura -->
-    <head> <!-- Etiqueta para agregar características de la página web -->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> KEPLER 22B </title> <!-- Etiqueta que indica el título de la página web -->
-        <link rel="stylesheet" href="styles/index.css"> <!-- Call file .css for desing -->
-    </head> 
-
-    <body> <!-- Etiqueta donde se incluye todo el contenido de la página web -->
-        <div class="title"> KEPLER 22B </div> <!-- Titulo principal de la página -->
-
-        <div class="container"> <!-- Contenido del menú -->
-            <aside class="sidebar"> <!-- Menú lateral -->
-
-                <div class="main-principal"> <!-- Etiqueta para crear el menu principal -->
-                    <a href="#intro"> Introducción </a> <!-- Llama la seccion intro -->
-                </div>
-
-                <div class="main-item">
-                    <input type="checkbox" id="lux-toogle"> <!-- Etiqueta para crear un checkbox -->
-                    <label for="lux-toogle" class="main-title"> Reino de la luz </label>
-
-                    <div class="submain">
-                        <a href="subpages/solar-court.html"> Reino </a>
-                        <a href="subpages/solar-court.html#lux-carcater"> Características </a>
-                        <a href="subpages/solar-court.html#lux-cultura"> Cultura </a>
-                        <a href="subpages/solar-court.html#lux-entidad"> Entidad suprema </a>
-                        <a href="subpages/solar-court.html#lux-criaturas"> Criaturas </a>
-                    </div>
-                </div>
-
-                <div class="main-item">
-                    <input type="checkbox" id="dark-toogle"> 
-                    <label for="dark-toogle" class="main-title"> Reino de la Oscuridad </label>
-
-                    <div class="submain"> 
-                        <a href="subpages/shadow-court.html"> Reino </a>
-                        <a href="subpages/shadow-court.html#dark-carcater"> Características </a>
-                        <a href="subpages/shadow-court.html#dark-cultura"> Cultura </a>
-                        <a href="subpages/shadow-court.html#dark-entidad"> Entidad suprema </a>
-                        <a href="subpages/shadow-court.html#dark-criaturas"> Criaturas </a>
-                    </div>
-                </div>
-
-                <div class="main-item">
-                    <input type="checkbox" id="medium-toogle"> 
-                    <label for="medium-toogle" class="main-title"> Reino del Medio </label>
-
-                    <div class="submain"> 
-                        <a href="subpages/limbo-court.html"> Reino </a>
-                        <a href="subpages/limbo-court.html#medium-carcater"> Características </a>
-                        <a href="subpages/limbo-court.html#medium-cultura"> Cultura </a>
-                        <a href="subpages/limbo-court.html#medium-entidad"> Entidad suprema </a>
-                        <a href="subpages/limbo-court.html#meidum-criaturas"> Criaturas </a>
-                    </div>
-                </div>
-            </aside>
-            
-            <div class="video-container"> <!-- Contenido del video -->
-                <video autoplay muted loop playsinline preload="auto"> <!-- Etiqueta para cargar el video sin audio -->
-                    <source src="multimedia/videos/vxxdy-tcyx8.mp4" type="video/mp4"> <!-- Etiqueta para llamar el video -->
-                    Tu navegador no soporta video. <!-- Mensaje de error -->
-                </video>
+        <title> Kepler 22B - Introducción </title>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    
+    <body>
+        <video autoplay muted loop playsinline preload="auto" class="main-background">
+            <source src="multimedia/videos/fondo.mp4" type="video/mp4">
+            Tu navegador no soporta video de fondo.
+        </video>
+        
+        <header>
+            <div class="logo">
+                <img src="multimedia/images/logo.jpg" alt="Kepler 22B" class="logo-img">
             </div>
 
-        
-            <main class="main-content"> <!-- Contenido principal -->
+            <h1> Kepler 22B </h1>
 
-                <section id="intro" class="text-box"> <!-- Etiqueta para crear una seccion identificada como intro -->
-                    <h1 class="handwritten-title"> Introducción </h1> <!-- Etiqueta que indica un titulo -->
-                    <p> 
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active"> Introducción </a>
+                    </li>
+
+                    <li>
+                        <a href="subpages/sinteryum.html"> Reino Luz </a>
+                    </li>
+                    
+                    <li>
+                        <a href="subpages/dartumbria.html"> Reino Oscuro </a>
+                    </li>
+                    
+                    <li>
+                        <a href="subpages/cresendo.html"> Reino medio </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         
+        <main>
+            <div class="intro-container">
+                <h2> Introducción </h2>
+
+                <div class="text-image"  class="col-md-6">
+                    <p>
                         Kepler 22b es un exoplaneta en una órbita tan peculiar que presenta una rotación sincronizada con su estrella, lo que significa que un hemisferio está siempre iluminado, mientras que el otro está en completa oscuridad. 
-                        La línea divisoria, conocida como "La Franja de Medianoche", es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro; corresponde al reino de "". 
-                        A sus extremos se encuentran los reinos de Lux y Dartumbria. Y más allá de ellos… las Tierras Exteriores, hogar de criaturas, nómadas y rezagados que no pertenecen a ninguna corte.
-                    </p>
-                
-                    <div class="subseccion"> <!-- Etiqueta para crear una subseccion -->
-                        <p>
-                            <span class="border-top"> Datos rápidos: </span>
-                                <ul class="tabed-list">
-                                <li> <i class="cursive"> Rotación: </i> Sincronizada </li>
-                                <li> <i class="cursive"> Tamaño: </i> ≈2.4 × Tierra (estimado)</li>
-                                <li> <i class="cursive"> Ubicación: </i> ~600 años luz</li>
-                                </ul>
-                        </p>
-                    </div>
-                </section>
-            </main> <!-- Etiqueta para cerrar la etiqueta main -->
-        </div> <!-- Etiqueta para cerrar la etiqueta div -->
+                        La línea divisoria, conocida como "La Franja de media noche" (Cresendo), es un limbo perpetuo donde la transición entre luz y sombra crea un borde borroso, y donde las condiciones cambian drásticamente de un lado a otro. 
+                        A sus extremos se encuentran los reinos de luz (Sinteryum) y la oscuridad (Dartumbria). En el crepúsculo intermedio se alza Crescendo, el eje político y educativo del planeta. 
+                        Más allá de las zonas controladas por las cortes se extiende la Tierra de Nadie: archipiélagos, canales quebrados y estuarios donde viven nómadas, exiliados y criaturas que ya no pertenecen a ninguna corte.
+                        <br><br>
 
-        <footer class="footer"> <!-- Etiqueta para definir pie de página -->
-            © Copyright 2025 | KEPLER 22B <!-- Información del pie de página -->
-        </footer> <!-- Etiqueta para cerrar la etiqueta footer -->
-    </body> <!-- Etiqueta para cerrar la etiqueta body -->
-</html> <!-- Etiqueta para cerrar la etiqueta html -->
+                        Datos rápidos:
+                        <br>
+                            - Rotación: Sincronizado con el de la tierra.
+                            <br>
+                            - Translación: 290 días terrestres.
+                            <br>
+                            - Tamaño: 2.4 veces el de la tierra (Aproximadamente).
+                            <br>
+                            - Ubicación: -600 años luz.
+                    </p>
+                    
+                   <div class="video-container">
+                        <video src="multimedia/videos/intro.mp4" class="main-video" controls loop muted>
+                            <source src="multimedia/videos/intro.mp4" type="video/mp4">
+                            Tu navegador no soporta el tag de video.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="datos">
+                    <h2> Origen de los mundos </h2>
+
+                    <p>
+                        La colonización humana inicial provocó divisiones por adaptación y visión. Tres líderes conocidos en las crónicas como Arion, Selene y Kael.
+                        Firmaron el conocido <em> Pacto de las Mareas </em>, también llamado Pacto de los Tres Hermanos, por el cual el planeta se repartió en tres dominios complementarios: Energía y conocimiento para Sinteryum, defensa y recursos para Dartumbria, y mediación y administración en Cresendo. 
+                        El Pacto estableció además protocolos para el uso de rutas marítimas, el intercambio de recursos críticos (cristal luminoso y pozos geotérmicos) y la creación de instituciones neutrales (academias y tribunales) ubicadas en la Franja.
+                    </p>
+                    <br><br>
+
+                    <h2> Línea de tiempo </h2>
+
+                    <p>
+                        30,000 años atrás — La Gran Separación.
+                        <br>
+                        Los primeros Keplerianos se dividen en tres linajes principales debido a la rotación sincronizada: 
+                        los hijos de la luz, los hijos de la oscuridad y los errantes del Crepúsculo.
+                        <br><br>
+
+                        25,000 años atrás — Fundación del Pacto de Hermanos.
+                        <br>
+                        Los líderes ancestrales de los tres linajes sellan un acuerdo sagrado para evitar guerras territoriales. 
+                        Cada reino recibiría una zona del planeta acorde a su adaptación ambiental.
+                        <br><br>
+
+                        18,000 años atrás — Construcción de las Ciudades Flotantes.
+                        <br>
+                        Debido a las gigantescas masas de agua del planeta, se desarrollan sistemas de plataformas acuaticas. 
+                        <br><br>
+
+                        10,000 años atrás — Guerra Silenciosa.
+                        <br>
+                        Un conflicto político entre la Corte Solar y la Corte Oscura por el control del cristal lumínico genera tensiones que casi rompen el pacto de hermanos.  
+                        El concejo del medio interviene y establece leyes de energía compartida.
+                        <br><br>
+
+                        6,000 años atrás — Era de Innovación.
+                        <br>
+                        Sinteryum impulsa la ingeniería solar, Dartumbria perfecciona los sistemas geotérmicos y Cresendo crea el primer tratado interreinos permanente.
+                        <br><br>
+
+                        1,000 años atrás — Reforma Trinitaria.
+                        <br>
+                        Se crea oficialmente el <em> Concex </em>, órgano que obliga a los reinos a debatir y votar antes de iniciar cualquier proyecto global.
+                        <br><br>
+
+                        300 años atrás — El Despertar de la Franja de Medianoche.
+                        <br>
+                        Fenómenos bioluminiscentes y cambios atmosféricos comienzan a surgir en la zona liminal, dando origen a nuevas especies y a cultos misteriosos.
+                        <br><br>
+
+                        Actualidad — Tensiones crecientes.
+                        <br>
+                        Las reservas de cristal lumínico disminuyen y la estabilidad del pacto vuelve a ponerse en duda. 
+                        El futuro del planeta depende del equilibrio del Concex.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        
+        <footer class="card-footer">
+            <p> © 2025 Copyright | Kepler 22B </p>
+        </footer>
+    </body>
+</html>
