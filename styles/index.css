@@ -94,10 +94,23 @@ nav a:hover, nav a.active {
     margin-top: 50px;
 }
 
-.image-container {
+.datos ul {
+    margin: 0;
+    padding: 0 50px;
+}
+
+.datos h3 {
+    text-align: left;
+    padding: 8px;
+    margin: -10px -10px 15px -10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.3rem;
+}
+
+.image-section {
     width: 100%;
-    max-width: 380px;
-    height: 220px;
+    max-width: 100%;
+    height: 300px;
     margin: 20px auto;
     overflow: hidden;
     border: 3px solid #000;
@@ -107,6 +120,25 @@ nav a:hover, nav a.active {
 }
 
 .main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video-section {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.main-video-section {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -124,9 +156,9 @@ nav a:hover, nav a.active {
 }
 
 .image-intro {
-    width: 50%;
-    max-width: 512px;
-    height: 400px;
+    width: 100%;
+    max-width: 60%;
+    height: 500px;
     margin: 20px auto; /* Espaciado arriba y abajo, centrado */
     overflow: hidden;
     border: 3px solid #000;
@@ -162,7 +194,7 @@ nav a:hover, nav a.active {
 
 .section .image-container, .section .video-container {
     max-width: none;
-    height: 180px;
+    height: 200px;
     margin: 12px 0;
 }
 
