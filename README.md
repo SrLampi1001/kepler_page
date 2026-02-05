@@ -1,5 +1,4 @@
-# kepler 22B - WORLDHUB.
->>>>>>> 29e5063 (Feat: New commands for update project)
+# kepler 22B
 
 Kepler-22b es un exoplaneta con rotación sincronizada, dividido en tres regiones debido a la luz constante en un hemisferio y la oscuridad perpetua en el otro. Su historia está marcada por la interdependencia y la tensión entre estos dominios.
 
